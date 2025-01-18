@@ -6,9 +6,12 @@ class FilmeController extends RenderView{
 
     public function infos($id){
         $id_filme = $id[0];
-        $filme = new FilmeModel();
+        $filmeApi = new FilmeModel();
+        $filme = $filmeApi->getFilmeApiById($id_filme);
 
-        $this->loadView('filmes',
-        ['filme' => $filme->getFilmeById($id_filme)]);
+        $this->loadView('filmes',[
+            'filme' => $filme,
+            'footer' => '2025 - Star Wars API',
+        ]);
     }
 }
