@@ -61,7 +61,6 @@
             <h3><?php echo $filme['titulo']; ?></h3>
             <p><strong>Diretor:</strong> <?php echo $filme['diretor']; ?></p>
             <p><strong>Data de Lançamento:</strong> <?php echo $filme['data_lancamento']; ?></p>
-            <a href="./filmes/<?php echo $filme['id']; ?>"> Saiba mais</a>
             <br>
             <br>
         <?php } ?>
