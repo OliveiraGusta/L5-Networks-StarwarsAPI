@@ -1,10 +1,9 @@
 <?php
 
-
 class HomeController extends RenderView{
     public function index() {
         $filmes = new FilmeModel();
-        $filmesApi = $filmes->getFilmesApi();
+        $filmesApi = $filmes->getFilmes();
 
         $this->loadView('home',[
             'title' => 'Star Wars API Home',

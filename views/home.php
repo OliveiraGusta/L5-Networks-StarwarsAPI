@@ -58,10 +58,10 @@
 
 <div class="filme">
     <?php foreach ($filmes as $filme) { ?>
-            <h3><?php echo $filme['title']; ?></h3>
-            <p><strong>Diretor:</strong> <?php echo $filme['director']; ?></p>
-            <p><strong>Data de Lançamento:</strong> <?php echo $filme['release_date']; ?></p>
-            <a href="./filmes/<?php echo $filme['uid']; ?>"> Saiba mais</a>
+            <h3><?php echo $filme['titulo']; ?></h3>
+            <p><strong>Diretor:</strong> <?php echo $filme['diretor']; ?></p>
+            <p><strong>Data de Lançamento:</strong> <?php echo $filme['data_lancamento']; ?></p>
+            <a href="./filmes/<?php echo $filme['id']; ?>"> Saiba mais</a>
             <br>
             <br>
         <?php } ?>
