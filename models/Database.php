@@ -7,7 +7,7 @@ class Database
   private $db_pass = DB_PASS;
   private $db_name = DB_NAME;
 
-  public function getConnection()
+  public function getConexao()
   {
     try {
       $pdo = new PDO(

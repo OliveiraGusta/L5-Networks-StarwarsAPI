@@ -56,16 +56,14 @@
     <h1><?php echo $title; ?></h1>
 </header>
 
-<div class="container">
-    <?php foreach ($filmes as $info) { ?>
-        <div class="filme">
-            <h3><?php echo $info['titulo']; ?></h3>
-            <h4>Episódio: <?php echo $info['episodio']; ?></h4>
-            <p><strong>Nota:</strong> <?php echo $info['nota']; ?> estrelas</p>
-            <p><strong>Data de Lançamento:</strong> <?php echo date('d/m/Y', strtotime($info['data_de_lancamento'])); ?></p>
-            <a href="./filmes/<?php echo $info['id']; ?>">Saiba mais</a>
-        </div>
-    <?php } ?>
+<div class="filme">
+    <?php foreach ($filmes as $filme) { ?>
+            <h3><?php echo $filme['titulo']; ?></h3>
+            <p><strong>Diretor:</strong> <?php echo $filme['diretor']; ?></p>
+            <p><strong>Data de Lançamento:</strong> <?php echo $filme['data_lancamento']; ?></p>
+            <br>
+            <br>
+        <?php } ?>
 </div>
 
 <footer>

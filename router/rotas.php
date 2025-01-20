@@ -2,6 +2,7 @@
 
 $rotas = [
     "/" => "HomeController@index",
-    "/filmes/{id}" => "FilmeController@infos"
+    '/api/filmes' => 'FilmeAPIController@getFilmes',
+    '/api/filmes/{id}' => 'FilmeAPIController@getFilmeById' 
 ];
 ?>
