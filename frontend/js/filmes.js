@@ -36,7 +36,7 @@ $(document).ready(function () {
                 </div>
                 <div>
                     <h1><strong>${filme.titulo}</strong></h1>
-                    <h3>Episodio: ${filme.episodio}</h2>
+                    <h3>Episódio ${filme.episodio}</h3>
                     <p>Diretor: ${filme.diretor}</p>
                     <p>Produtor: ${filme.produtor}</p>
                     <p>${dataFormatada} - ${filme.idade}</p>
