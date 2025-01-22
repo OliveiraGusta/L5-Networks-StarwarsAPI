@@ -10,7 +10,13 @@ class FilmeAPIController
         $this->logAPIModel = new LogsAPIModel();
     }
 
-
+    private function respostaApi($data, $statusCode = 200) {
+        http_response_code($statusCode);
+        header('Content-Type: application/json');
+        echo json_encode($data);
+        exit;
+    }
+    
     public function getFilmes() {
 
         $filmeModel = new FilmeModel();
@@ -36,17 +42,9 @@ class FilmeAPIController
             $this->logAPIModel->registrarLog("GET", "/api/filmes/$idFilme", 200);
             $this->respostaApi($filme);
         } else {
-            $this->logAPIModel->registrarLog("GET", "/api/filmes", 404);
+            $this->logAPIModel->registrarLog("GET", "/api/filmes/$idFilme", 404);
             $this->respostaApi(['mensagem' => 'Filme nao encontrado'], 404);
         }
     }
-    
-    private function respostaApi($data, $statusCode = 200) {
-        http_response_code($statusCode);
-        header('Content-Type: application/json');
-        echo json_encode($data);
-        exit;
-    }
-    
-
+   
 }
