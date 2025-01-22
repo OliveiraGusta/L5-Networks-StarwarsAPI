@@ -20,7 +20,7 @@ class DocumentacaoController extends RenderView
             'titulo' => 'Documentação da API',
             'projeto' => 'Starwars API L5.Networks',
             'versao' => "1.0.2",
-            'descricao' => '',
+            'descricao' => 'O projeto Star Wars API é uma aplicação desenvolvida como teste tecnico para a empresa L5.Networks. Ele inclui uma API RESTful que fornece acesso a informações detalhadas sobre filmes, personagens, planetas e permite que os usuários registrem e visualizem comentários e avaliações.',
             'endpoints' => $documentacaoRotas,
             'footer' => '2025 - Star Wars API',
         ]);

@@ -49,7 +49,7 @@ class Core
         if (!$rotaEncontrada) {
             require_once __DIR__ . "/../controllers/NotFoundController.php";
             $controller = new NotFoundController();
-            $controller->index();
+            $controller->index($method, $url );
         }
     }
 

@@ -19,6 +19,7 @@
         <h2><?= $projeto; ?></h2>
         <div class="d-flex flex-column">
             <h3 class=""><?= $versao; ?></h3>
+            <p><?= $descricao; ?></p>
             <a href="https://github.com/OliveiraGusta/" target="_blank">Contato do Desenvolvedor</a>
             <a href="https://github.com/OliveiraGusta/L5-Networks-StarwarsAPI" target="_blank">Repositorio</a>
         </div>
