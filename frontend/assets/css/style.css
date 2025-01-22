@@ -1,0 +1,138 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    background-image: url("../images/utils/background.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+img, a img {
+    border: none;
+}
+
+/* Filmes Logos */
+.logo-filmes {
+    width: 200px;
+    opacity: 0.7;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.logo-filmes:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/* StarWars Logo   */
+#logo-starwars {
+    width: 250px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+#logo-starwars:hover {
+    transform: scale(1.1);
+}
+
+
+/* Lista Filmes - index  */
+#filmes {
+    list-style: none;
+}
+#filmes img, #filme img{
+    border: 1px solid #000;
+    border-radius: 8%;
+    transition: transform 0.3s, opacity 0.3s;
+
+}
+#filmes img:hover{
+    border: 1px solid white;
+    transform: scale(1.02);
+}
+
+/* Filme - filmes  */
+#filme {
+    position: relative;
+
+    background-image: url('');
+    background-color: rgba(56, 56, 56, 0.5); 
+    backdrop-filter: blur(50px);    
+    -webkit-backdrop-filter: blur(50px); 
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    margin: 10px;
+    padding: 20px;
+
+    font-size: 20px;
+
+    color: #fff;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+#filme::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 20px;
+    z-index: 1; 
+}
+
+#filme * {
+    position: relative;
+    z-index: 2; 
+}
+
+.personagem-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.personagem-card img {
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.planeta-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.planeta-card img {
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+.footer img {
+    border-radius: 5px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.footer a:hover{
+    color: #fff;
+}
+.footer a img, .icone {
+    transition: transform 0.3s, opacity 0.3s;
+}
+.footer a img:hover, .icone:hover {
+    transform: scale(1.1); 
+}
