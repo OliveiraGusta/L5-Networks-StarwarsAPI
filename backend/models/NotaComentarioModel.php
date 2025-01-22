@@ -19,10 +19,10 @@ class NotaComentarioModel extends Database{
             $stmt->bindParam(':nota', $nota, PDO::PARAM_INT);
             $stmt->bindParam(':comentario', $comentario, PDO::PARAM_STR);
             
-            return $stmt->execute(); // Retorna true se a inserção for bem-sucedida
+            return $stmt->execute();
         } catch (PDOException $err) {
             echo "<script>console.log(" . $err->getMessage() . ")</script>";
-            return false; // Retorna false em caso de erro
+            return false; 
         }
     }
     

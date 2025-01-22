@@ -14,7 +14,10 @@ $(document).ready(function () {
                         </a>
                         <div class="text-left mt-3">
                             <h5 class="my-3">${filmes[i].titulo}</h5>
-                            <a href="./filmes/${filmes[i].id}" class="btn btn-outline-light py-2 px-4 btn-sm">Saiba mais</a>
+                            <div class="d-flex gap-3 align-items-center justify-content-start">
+                                <a href="./filmes/${filmes[i].id}" class="btn btn-outline-light py-2 px-4 btn-sm">Saiba mais</a>
+                                <a href="./filmes/${filmes[i].id}#comentarios" class="btn btn-outline-light py-2 px-4 btn-sm">Avaliar Filme</a>
+                            </div>
                         </div>
                     </div>
                 </li>
